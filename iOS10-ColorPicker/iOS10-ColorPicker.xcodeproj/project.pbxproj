@@ -12,6 +12,7 @@
 		4547305C234F8EAB00EB74F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547305A234F8EAB00EB74F4 /* Main.storyboard */; };
 		4547305E234F8EAC00EB74F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4547305D234F8EAC00EB74F4 /* Assets.xcassets */; };
 		45473061234F8EAC00EB74F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547305F234F8EAC00EB74F4 /* LaunchScreen.storyboard */; };
+		45473069234F8F7200EB74F4 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45473068234F8F7200EB74F4 /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4547305D234F8EAC00EB74F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45473060234F8EAC00EB74F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45473062234F8EAC00EB74F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45473068234F8F7200EB74F4 /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		4547304A234F8EAB00EB74F4 = {
 			isa = PBXGroup;
 			children = (
+				45473068234F8F7200EB74F4 /* ColorWheel.swift */,
 				45473055234F8EAB00EB74F4 /* iOS10-ColorPicker */,
 				45473054234F8EAB00EB74F4 /* Products */,
 			);
@@ -137,6 +140,7 @@
 			files = (
 				45473059234F8EAB00EB74F4 /* ViewController.swift in Sources */,
 				45473057234F8EAB00EB74F4 /* AppDelegate.swift in Sources */,
+				45473069234F8F7200EB74F4 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
