@@ -16,11 +16,28 @@ class ColorWheel: UIView {
             setNeedsDisplay()
         }
     }
+    override func layoutSubviews() {
+        
+        isUserInteractionEnabled = false
+        
+        //Creating a radius to be used
+        let radius = bounds.width / 2
+        
+        layer.cornerRadius = radius
+        
+        //Creating The Border
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.black.cgColor
+        
+        clipsToBounds = true
+    }
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        
+        //If let context = UIGraphicsGetContext??? this can be done either way
         
         //Go through every point in the view and figure out what color it should be then draw it
         for y in stride(from: 0, through: bounds.maxY, by: 1) {
@@ -31,6 +48,7 @@ class ColorWheel: UIView {
                 //This is the same as calling setFillColor
                 color.setFill()
                 
+                //Where do we want to draw this on the view?
                 let pixel = CGRect(x: x, y: y, width: 1, height: 1)
                 
                 UIRectFill(pixel)
